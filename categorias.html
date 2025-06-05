@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias - Alma de Papel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="imagens/Dê_asas_à_sua-removebg-preview.png" alt="Alma de Papel Logo">
+                <h1>Alma de Papel</h1>
+            </a>
+            <div class="header-actions-container">
+                <form class="search-bar" id="searchBarPage">
+                    <input type="text" id="searchInputPage" placeholder="Buscar...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <div class="header-actions">
+                    <a href="favoritos.html" class="action-link" aria-label="Favoritos"><i class="fas fa-heart"></i></a>
+                    <a href="carrinho.html" class="action-link" aria-label="Carrinho"><i class="fas fa-shopping-cart"></i><span class="cart-count-indicator" id="cart-item-count">0</span></a>
+                    <a href="login.html" class="action-link" aria-label="Minha Conta"><i class="fas fa-user-circle"></i></a>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container page-section">
+            <div class="page-header">
+                <h2 class="page-title"><i class="fas fa-stream"></i> Explore Nossos Mundos</h2>
+                <p class="page-description">Cada categoria é um portal para novas aventuras. Deixe sua curiosidade guiar
+                    você!</p>
+            </div>
+
+            <div class="category-grid-detailed">
+                <a href="produtos.html?categoria=romance" class="category-card-detailed" id="romance">
+                    <div class="category-card-detailed-image-carousel">
+                        <img src="imagens/Orgulhoepreconceito.jpg" alt="Livros de Romance - Imagem 1" class="carousel-image">
+                        <img src="imagens/A Culpa é Das Estrelas.jpg" alt="Livros de Romance - Imagem 2" class="carousel-image">
+                        <img src="imagens/seleçao.jpg" alt="Livros de Romance - Imagem 3" class="carousel-image">
+                    </div>
+                    <div class="category-card-detailed-content">
+                        <h3>Romance</h3>
+                        <p>Suspiros, corações acelerados e histórias de amor que aquecem a alma. Ideal para sonhadores.</p>
+                        <span>Ver Livros <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="produtos.html?categoria=ficcao" class="category-card-detailed" id="ficcao">
+                    <div class="category-card-detailed-image-carousel">
+                        <img src="imagens/harry potter.jpg" alt="Livros de Ficção - Imagem 1" class="carousel-image">
+                        <img src="imagens/coraline.jpg" alt="Livros de Ficção - Imagem 2" class="carousel-image">
+                        <!-- <img src="imagens/cat_ficcao_cientifica.jpg" alt="Livros de Ficção"> antiga imagem -->
+                    </div>
+                    <div class="category-card-detailed-content">
+                        <h3>Ficção Contemporânea</h3>
+                        <p>Narrativas que refletem o nosso tempo, com personagens complexos e tramas envolventes.</p>
+                        <span>Ver Livros <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="produtos.html?categoria=fantasia" class="category-card-detailed" id="fantasia">
+                    <div class="category-card-detailed-image-carousel">
+                        <img src="imagens/cat_fantasia_1.jpg" alt="Livros de Fantasia - Imagem 1" class="carousel-image">
+                        <img src="imagens/cat_fantasia_2.jpg" alt="Livros de Fantasia - Imagem 2" class="carousel-image">
+                        <!-- <img src="imagens/cat_fantasia.jpg" alt="Livros de Fantasia"> antiga imagem -->
+                    </div>
+                    <div class="category-card-detailed-content">
+                        <h3>Fantasia</h3>
+                        <p>Reinos mágicos, criaturas míticas e jornadas épicas. Aventura e imaginação sem limites.</p>
+                        <span>Ver Livros <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="produtos.html?categoria=misterio" class="category-card-detailed" id="misterio">
+                    <div class="category-card-detailed-image-carousel">
+                        <img src="imagens/cat_misterio_1.jpg" alt="Livros de Mistério e Suspense - Imagem 1" class="carousel-image">
+                        <img src="imagens/cat_misterio_2.jpg" alt="Livros de Mistério e Suspense - Imagem 2" class="carousel-image">
+                        <!-- <img src="imagens/cat_suspense.jpg" alt="Livros de Mistério e Suspense"> antiga imagem -->
+                    </div>
+                    <div class="category-card-detailed-content">
+                        <h3>Mistério & Suspense</h3>
+                        <p>Pistas, segredos e reviravoltas que vão prender sua atenção até a última página.</p>
+                        <span>Ver Livros <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="produtos.html?categoria=infantil" class="category-card-detailed" id="infantil">
+                    <div class="category-card-detailed-image-carousel">
+                        <img src="imagens/cat_infantil_1.jpg" alt="Livros Infantis - Imagem 1" class="carousel-image">
+                        <img src="imagens/cat_infantil_2.jpg" alt="Livros Infantis - Imagem 2" class="carousel-image">
+                        <!-- <img src="imagens/cat_infantil.jpg" alt="Livros Infantis"> antiga imagem -->
+                    </div>
+                    <div class="category-card-detailed-content">
+                        <h3>Infantil & Juvenil</h3>
+                        <p>Aventuras coloridas e lições valiosas para encantar os pequenos e jovens leitores.</p>
+                        <span>Ver Livros <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="produtos.html?categoria=poesia" class="category-card-detailed" id="poesia">
+                    <div class="category-card-detailed-image-carousel">
+                        <img src="imagens/cat_poesia_1.jpg" alt="Livros de Poesia - Imagem 1" class="carousel-image">
+                        <img src="imagens/cat_poesia_2.jpg" alt="Livros de Poesia - Imagem 2" class="carousel-image">
+                        <!-- <img src="imagens/cat_poesia.jpg" alt="Livros de Poesia"> CRIE ESSA IMAGEM -> antiga imagem -->
+                    </div>
+                    <div class="category-card-detailed-content">
+                        <h3>Poesia</h3>
+                        <p>Versos que tocam a alma, explorando emoções, beleza e a profundidade da experiência humana.</p>
+                        <span>Ver Livros <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <img src="imagens/Dê_asas_à_sua-removebg-preview.png" alt="Alma de Papel Logo Rodapé">
+                    <h1>Alma de Papel</h1>
+                </a>
+                <p>"Onde cada página é um convite para sonhar."</p>
+                <div class="social-media">
+                    <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Pinterest" title="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <nav class="footer-nav">
+                <h4>Descubra</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categorias.html">Categorias</a></li>
+                    <li><a href="favoritos.html">Favoritos</a></li>
+                    <li><a href="sobre.html">Nossa História</a></li>
+                    <li><a href="contato.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <h4>Ajuda</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Envios e Devoluções</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="login.html">Minha Conta</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info-footer">
+                <h4>Contato Mágico</h4>
+                <p><i class="fas fa-envelope"></i> contos@almadepapel.com</p>
+                <p><i class="fas fa-phone-alt"></i> (11) 91234-5678</p>
+                <p><i class="fas fa-map-marker-alt"></i> Ateliê Online, Brasil</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © <span id="currentYear"></span> Alma de Papel. Feito com amor e um toque de magia.
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
