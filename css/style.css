@@ -333,7 +333,7 @@ header {
 
 /* Adicionar um padrão sutil ou ilustração de fundo se desejar */
 /* .hero::before { content:''; position: absolute; /* ... para padrão */
-}
+
 
 */ .hero .container {
     position: relative;
